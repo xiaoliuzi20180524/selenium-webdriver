@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>等待练习案例</title>
+</head>
+<style type="text/css">
+    #green_box {
+        background-color: chartreuse;
+        width: 400px;
+        height: 200px;
+        border: none;
+    }
+</style>
+
+<script type="application/javascript">
+    function wait_show() {
+        setTimeout("create_div()", 3000);
+    }
+
+    function create_div() {
+        var divElement = document.createElement('div');
+        divElement.id = "green_box";
+        var pElement = document.createElement('p');
+        pElement.innerText = "我是div,我出现了,哈哈！";
+        document.body.appendChild(divElement);
+        divElement.appendChild(pElement);
+    }
+</script>
+<body>
+<button id="wait" onclick="wait_show()">创建div</button>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Default Suite"><!-- 可定义测试套件名称 -->
+    <test name="TestNG">
+        <classes>
+            <!--套件测试类示例代码1-->
+            <class name="com.testng.demo3.TestSuiteDemo1" />
+            <!--套件测试类示例代码2-->
+            <class name="com.testng.demo3.TestSuiteDemo2" />
+        </classes>
+    </test>
+</suite>

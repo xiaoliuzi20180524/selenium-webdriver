@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="suite">
+    <test name="分组测试">
+        <groups>
+            <run>
+                <!--只包含1组-->
+                <include name="group1"></include>
+                <!--除了3组，都能执行-->
+                <!--<exclude name="group3"></exclude>-->
+            </run>
+        </groups>
+        <classes>
+            <class name="com.testng.demo5.TestGroup"></class>
+        </classes>
+    </test>
+</suite>

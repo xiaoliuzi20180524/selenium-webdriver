@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弹窗练习案例</title>
+    <script language="javascript">
+        function checkup() {
+            if (window.confirm("确定要删除吗？")) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function welcome() {
+            var myname = prompt("请输入你的姓名:");
+            if (myname != null) {
+                alert("你好，" + myname);
+            } else {
+                alert("你好 my friend.");
+            }
+        }
+    </script>
+</head>
+<body>
+<input id="alert" value="alert" type="button" onclick="alert('欢迎关注我的公号：软件测试君！请按确认继续！');"/><br>
+<button id="dialog" onclick="checkup()">删除按钮</button><br>
+<button id="welcome" onclick="welcome()">点击加入我们</button><br>
+</body>
+</html>

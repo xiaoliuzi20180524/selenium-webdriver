@@ -1,0 +1,5 @@
+java -jar selenium-server-standalone-3.9.1.jar -role node -hub "http://192.168.1.106:4444/grid/register"
+-Dwebdriver.ie.driver="E:\node\IEDriverServer.exe"
+-Dwebdriver.chrome.driver="E:\node\chromedriver.exe"
+-browser "browserName=internet explorer,maxInstances=5,version=8,platform=WINDOWS"
+-browser "browserName=chrome,maxInstances=2,version=76,platform=WINDOWS"

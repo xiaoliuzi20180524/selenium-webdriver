@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="test" parallel="tests" thread-count="1">
+    <test name="Firefox浏览器">
+        <parameter name="type" value="Firefox"></parameter>
+        <classes>
+            <class name="com.brower.demo.TestBrowserParallel"></class>
+        </classes>
+    </test>
+    <test name="IE浏览器">
+        <parameter name="type" value="IE"></parameter>
+        <classes>
+            <class name="com.brower.demo.TestBrowserParallel"></class>
+        </classes>
+    </test>
+    <test name="chrome浏览器">
+        <parameter name="type" value="chrome"></parameter>
+        <classes>
+            <class name="com.brower.demo.TestBrowserParallel"></class>
+        </classes>
+    </test>
+</suite>
